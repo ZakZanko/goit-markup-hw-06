@@ -531,6 +531,20 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <label for="" class="footer-label"
+            >Подпишитесь на рассылку<input
+              type="text"
+              class="footer-input"
+              placeholder="E-mail"
+            />
+          </label>
+          <button type="button" class="footer-btn">
+            Подписаться<svg class="footer-icon-form" width="24px" height="24px">
+              <use href="./img/icon.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <div
@@ -546,18 +560,18 @@
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
           <div class="modal-field">
-          <label class="modal-label">
-            <span>Имя</span>
-            <input
-              type="text"
-              class="modal-input"
-              name="user-name"
-              required
-              id="user-name"
-            /><svg class="modal-icon" width="18px" height="18px">
-              <use href="./img/icon.svg#icon-person-black"></use>
-            </svg>
-          </label>
+            <label class="modal-label">
+              <span>Имя</span>
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                required
+                id="user-name"
+              /><svg class="modal-icon" width="18px" height="18px">
+                <use href="./img/icon.svg#icon-person-black"></use>
+              </svg>
+            </label>
           </div>
           <div class="modal-field">
             <label class="modal-label">
@@ -587,7 +601,9 @@
             </label>
           </div>
           <div class="modal-field">
-            <label for="user-text" class="modal-label"><span>Коментарий</span></label>
+            <label for="user-text" class="modal-label"
+              ><span>Коментарий</span></label
+            >
             <textarea
               name="user-text"
               id="user-text"
@@ -595,18 +611,24 @@
               class="modal-textarea"
             ></textarea>
           </div>
-          <div class="modal-agree">
-            <input
+          <label for="agree" class="modal-label-check"
+            ><svg class="modal-check-icon2" width="16px" height="15px">
+              <use href="./img/icon.svg#icon-Vector-2"></use></svg>
+              <input
               type="checkbox"
               class="modal-check"
-              name=""
+              name="agree"
               id="agree"
-              width="16px"
+              width="20px"
               height="15px"
-            /><span class="modal-span"
-              >Соглашаюсь с рассылкой и принимаю <span class="modal-span-text">Условия договора</span></span
-            >
-          </div>
+            /><svg class="modal-check-icon" width="16px" height="15px">
+              <use href="./img/icon.svg#icon-Vector"></use>
+            </svg>
+            <p class="modal-title2">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="./index.html" class="modal-link">Условия договора</a>
+            </p></label
+          >
           <button type="submit" class="modal-btn">Отправить</button>
         </form>
       </div>
